@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<style>
+  .navbar-light .navbar-brand {
+    color: #422419;
+    font-family: var("ClassicRootsPersonalUseRegular");
+  }
+
+  @font-face {
+    font-family: ClassicRootsPersonalUseRegular;
+    src: url("assets/fonts/ClassicRootsPersonalUseRegular-8MwDZ.ttf");
+  }
+
+  .navbar-brand {
+    font-family: ClassicRootsPersonalUseRegular;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: x-large;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: #422419;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #422419;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #422419;
+
+  }
+
+  @font-face {
+    font-family: QuietlyEndureRegular;
+    src: url("assets/fonts/QuietlyEndureRegular-DO3lW.ttf");
+  }
+
+  .navbar-nav>li>a {
+    font-family: QuietlyEndureRegular;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-size: larger;
+
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    background-color: #422419;
+  }
+
+  div#navbarSupportedContent {
+    color: white;
+
+  }
+
+  ul.dropdown-menu.show {
+    background-color: #422419;
+  }
+
+  a.dropdown-item {
+    color: white;
+  }
+
+  .dropdown-item:active {
+    background-color: #2b1710;
+  }
+
+  .dropdown-item:hover {
+    color: white;
+    background-color: #2b1710;
+  }
+
+  ul.dropdown-menu.show {
+    display: table;
+    border-radius: 0px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    background-color: #422419;
+  }
+
+  .list-inline {
+    padding-left: 0;
+    list-style: none;
+    display: table;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    background-color: #422419;
+    position: relative;
+  }
+
+  @font-face {
+    font-family: Haster;
+    src: url("assets/fonts/Haster-6Y4Po.ttf");
+  }
+
+  .sliderheading {
+    font-family: Haster;
+
+  }
+
+  .footertext {
+    color: #422419;
+  }
+
+  .footerline {
+    color: #2b1710;
+    height: 2px;
+
+  }
+
+  .footerheading {
+    font-size: x-large;
+  }
+  body {
+    background: #eee;
+    
+  background-color: #ADA996 → #F2F2F2 → #DBDBDB →#EAEAEA;
+    
+}
+
+.name {
+    color: rgb(12, 12, 94)
+}
+.name:hover{
+    font-weight: bolder;
+}
+
+.work {
+    font-weight: bold;
+    font-size: 15px
+}
+
+.about span {
+    font-size: 13px
+}
+
+.v-profile {
+    color: blue;
+    cursor: pointer
+}
+
+.box {
+    -webkit-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
+    -moz-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
+    box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72)
+}
+
+.col-md-3 {
+    margin-top: 10px
+    
+}
+.mb-0{
+font-weight: bold;
+color: rgb(12, 12, 94);
+}
+.mb-0:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+.about-section{
+    -webkit-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
+    -moz-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
+    box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
+    background-color: white;
+    text-align: center;
+    height: 300px;
+    padding-top: 40px;
+    width: 1000px;
+    margin-left: 200px;
+    margin-top: 20px;
+    
+}
+h1{
+    font-weight: bolder;
+    color:  rgb(12, 12, 94);
+}
+.bg {
+    background-image: url('assets/img/about.jpg');
+    min-height: 500px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  
+</style>
+
+<body>
+  <!-- navbar start -->
+  <nav class="navbar  navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">CRAZY PUPPY</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              BREEDS
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <ul class='list-inline' aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">American dogs</a></li>
+                <li><a class="dropdown-item" href="#">Asian dogs</a></li>
+                <li><a class="dropdown-item" href="#">French dogs</a></li>
+                <li><a class="dropdown-item" href="#">German dogs</a></li>
+              </ul>
+            </ul>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="#">
+              PETS
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="blog.html">
+              Blog
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="#">
+              Nutritions
+            </a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ">
+          <li class="nav-item ">
+            <a class="nav-link" href="home.html" id="navbarDropdown">
+              HOME
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="aboutus.html" id="navbarDropdown">
+              ABOUT US
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="contactus.html" id="navbarDropdown">
+              CONTACT
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="FAQ.html" id="navbarDropdown">
+              FAQ
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="reviews.html" id="navbarDropdown">
+              REVIEWS
+            </a>
+          </li>
+        </ul>
+
+        <div class="iconsa ms-4">
+          <a href="https://www.facebook.com/" class="unstyled"><i class="bi-facebook"></i></a>
+          <a href="https://www.instagram.com/"><i class="bi-instagram ms-2"></i></a>
+          <a href="https://twitter.com/"><i class="bi-twitter ms-2"></i></a>
+        </div>
+
+      </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- Your Content -->
+
+   <!-- header  -->
+   <div class="row bg">
+    <div class="mt-5 pt-5 pb-5">
+      <h1 class="mt-5 pt-5 text-center text-white" style="font-family:QuietlyEndureRegular  ; font-size: 70px;">ABOUT US</h1>
+      <h5 class="text-white text-center">The key to a good dog is a well-trained dog. When you train together, <br> an
+        unspoken language builds between you through words, hand signals, <br> whistles and other methods.
+    </div>
+  </div>
+  <!-- Header end -->
+
+<!--Start About us page-->
+  <div class="container px-5 bg-white">
+    <div class="row justify-content-center my-5 mt-5 pt-5">
+      
+      <div class="col-md-7 col-sm-6  mt-5">
+        <h1 class=" text-center"  style="font-family:QuietlyEndureRegular ;">WHO WE ARE ?</h1>
+        <p class="text-secondary  mt-3 text-center"  style="font-family:QuietlyEndureRegular ;">More often than not, many people seem to prefer the predictability
+          and <br> specific characteristics of a particular dog breed. But it is hard to deny that <br> mixed breed
+          puppies make
+          extremely good pets. If you want to get the best puppy, a dog breeder is usually the one you should get in
+          touch. Choosing <br> the right breeder can bring the difference between finding a happy healthy <br> puppy and
+          having a
+          nightmare experience. So the vast experience of a dog breeder is very important to find you an amazing
+          puppy</p>
+          
+      
+
+      </div>
+      <div class="col-md-5 col-sm-6 d-flex ">
+        <img src="assets/img/who.jfif" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+  <!--Start About us page END-->
+
+  
+
+
+  <div class="container text-center mt-5 mb-2">
+      <h1 class="mb-0"  style="font-family:QuietlyEndureRegular ;">Meet our Team</h1><span></span> <br>
+      <h2 class="mb-0"  style="font-family:QuietlyEndureRegular ;">About Us</h2>
+  </div>
+  <div class="container mt-3">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle"
+                      src="assets/img/female.png" width="120">
+                  <h5 class="mt-3 name"  >UMME-SHIFA</h5><span class="work d-block">Team Member</span><span
+                      class="work d-block"></span>
+                  <div class="mt-4 about">+923122509452<br> <span> Instagram : umme.shifa.73 </span> <br> <span> Gmail
+                          : shifau876@gmail.com </span> </div>
+
+                  <div class="mt-4">
+                      <h6 class="v-profile">View Profile</h6>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle"
+                      src="assets/img/male.png" width="120">
+                  <h5 class="mt-3 name" >M. WAJAHAT KHAN</h5><span class="work d-block">Team Member</span><span
+                      class="work d-block"></span>
+                  <div class="mt-4 about">+923162999205<br> <span> Instagram : ------- </span> <br> <span> Gmail
+                          : wk273981@gmail.com</span> </div>
+
+                  <div class="mt-4">
+                      <h6 class="v-profile">View Profile</h6>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle"
+                      src="assets/img/male.png" width="120">
+                  <h5 class="mt-3 name">MALIK NOOR MUSTAFA</h5><span class="work d-block">Team Member</span><span
+                      class="work d-block"></span>
+                  <div class="mt-4 about">+923041246650<br> <span> Instagram : ------- </span> <br> <span> Gmail
+                          : maliknoormustafa48@gmail.com</span> </div>
+
+                  <div class="mt-4">
+                      <h6 class="v-profile">View Profile</h6>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle"
+                      src="assets/img/male.png" width="120">
+                  <h5 class="mt-3 name">MIRZA M. ABU HURRAIRA</h5><span class="work d-block">Team Member</span><span
+                      class="work d-block"></span>
+                  <div class="mt-4 about">+923180232867<br> <span> Instagram : ------- </span> <br> <span> Gmail
+                          : rajpoothurrera5@gmail.com</span> </div>
+
+                  <div class="mt-4">
+                      <h6 class="v-profile">View Profile</h6>
+                  </div>
+              </div>
+          </div>
+<br>
+<br>
+<br><br>
+
+
+      </div>
+  </div>
+  <br>
+  <h3>  </h3>
+
+  <!--End About Us ppage-->
+  
+
+
+
+  <!-- Your Content End -->
+
+
+  <!--Footer-->
+
+  <div class="row bg-light text-dark m-0 p-0px-0 pt-2">
+
+    <div class="col-md-3 footertext">
+      <a class="navbar-brand ms-3" href="#">CRAZY PUPPY</a>
+
+      <hr class="footerline">
+      <p>We consider it an honor to provide the highest level of veterinary care and service to the
+        pets and families of our community. We look forward to helping your pet have as many happy, healthy years with
+        you as possible!</p>
+    </div>
+
+    <div class="col-md-3 footertext">
+      <h3 class="text-center footerheading mt-2">Explore</h3>
+      <hr>
+      <ul class="list-unstyled text-center ">
+        <ul class="list-unstyled text-center">
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Breeds</a>
+          </li>
+          <li>
+            <a href="#">Pets</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="#">Nutrition</a>
+          </li>
+          <li>
+            <a href="#">About US</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+    </div>
+
+    <div class="col-md-3 footertext">
+      <h3 class="text-center footerheading mt-2">All Time Famous Dogs</h3>
+      <hr class="footerline">
+      <ul class="list-unstyled text-center">
+        <li>
+          <a href="#">American dogs</a>
+        </li>
+        <li>
+          <a href="#">Asian dogs</a>
+        </li>
+        <li>
+          <a href="#">French dogs</a>
+        </li>
+        <li>
+          <a href="#">German dogs</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-3 footertext">
+      <h3 class="text-center footerheading mt-2">Contact Us</h3>
+      <hr class="footerline">
+      <ul class="list-unstyled">
+        <li>
+          <div class="iconsa">
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXJTXxlkXLRqClmWJvDtjMVFjMQXwHTlQGHtRvgTDXlNJstbBkdBszSNLvGZxSJDDnptB"
+              class="unstyled"><i class="bi-envelope-fill"></i>
+              Email</a>
+        </li>
+        <li>
+          <a href="#" class="unstyled"><i class="bi-telephone-fill"></i>
+            03123456789</a>
+        </li>
+        <li>
+          <a href="#" class="unstyled"><i class="bi-telephone-fill"></i>
+            03222111134</a>
+        </li>
+        <li>
+          <a href="#" class="unstyled"><i class="bi-geo-alt-fill"></i>
+            SD-1, Block A North Nazimabad Town, Karachi, Karachi City, Sindh </a>
+        </li>
+      </ul>
+      <div class="iconsa text-center">
+        <a href="https://www.facebook.com/" class="unstyled"><i class="bi-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi-instagram ms-2"></i></a>
+        <a href="https://twitter.com/"><i class="bi-twitter ms-2"></i></a>
+      </div>
+    </div>
+    <hr class="footerline">
+    <p class="footertext">&#169 2017-2018 Company. Inc-<a href="#">Privacy</a>-Terms</p>
+  </div>
+  </div>
+
+
+
+  <!--- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+
+</html>
